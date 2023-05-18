@@ -7,10 +7,7 @@ from torchvision.utils import save_image
 from functions import bb_mapping
 from tqdm import tqdm
 import numpy as np
-def noise_filter(subset, data, yolo_bb):
-    grid = 'grids/grid1616/testing_dada_grid.txt'
-    img_dir = 'DADA/testing/camera_images'
-    gaze_map = 'DADA/testing/gazemap_images'
+def noise_filter(subset, data, yolo_bb, grid, img_dir, gaze_map):
 
     task = 'denoise'
     th = 0.1
@@ -64,4 +61,8 @@ if __name__ == "__main__":
     data = 'BDDA'
     subset='training'
     yolo_bb = 'yolo5_boundingboxes/testing_dada'
-    a = noise_filter(subset,data,yolo_bb)
+    grid = 'grids/grid1616/testing_dada_grid.txt'
+    img_dir = 'DADA/testing/camera_images'
+    gaze_map = 'DADA/testing/gazemap_images'
+
+    a = noise_filter(subset,data,yolo_bb,grid , img_dir, gaze_map)
