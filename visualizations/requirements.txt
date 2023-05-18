@@ -1,0 +1,201 @@
+absl-py @ file:///opt/conda/conda-bld/absl-py_1639803114343/work
+actionlib==1.13.2
+aiohttp @ file:///tmp/build/80754af9/aiohttp_1646788240124/work
+aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
+angles==1.9.13
+async-timeout @ file:///tmp/build/80754af9/async-timeout_1637851218186/work
+asynctest==0.13.0
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+blinker==1.4
+bondpy==1.8.6
+Bottleneck @ file:///tmp/build/80754af9/bottleneck_1648028896657/work
+brotlipy==0.7.0
+cachetools @ file:///tmp/build/80754af9/cachetools_1619597386817/work
+camera-calibration==1.16.0
+camera-calibration-parsers==1.12.0
+catkin==0.8.10
+certifi==2022.5.18.1
+cffi @ file:///opt/conda/conda-bld/cffi_1642701102775/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click @ file:///tmp/build/80754af9/click_1646056591685/work
+controller-manager==0.19.5
+controller-manager-msgs==0.19.5
+cryptography @ file:///tmp/build/80754af9/cryptography_1652083456434/work
+cv-bridge==1.16.0
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+diagnostic-analysis==1.11.0
+diagnostic-common-diagnostics==1.11.0
+diagnostic-updater==1.11.0
+dynamic-reconfigure==1.7.2
+einops==0.4.1
+fonttools==4.25.0
+frozenlist @ file:///tmp/build/80754af9/frozenlist_1637767116045/work
+fvcore==0.1.5.post20221221
+gazebo_plugins==2.9.2
+gazebo_ros==2.9.2
+gencpp==0.6.5
+geneus==3.0.0
+genlisp==0.4.18
+genmsg==0.5.16
+gennodejs==2.0.2
+genpy==0.6.15
+google-auth==1.35.0
+google-auth-oauthlib==0.4.1
+gpytorch==1.8.1
+grpcio @ file:///tmp/build/80754af9/grpcio_1637578017926/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+image-geometry==1.16.0
+imageio==2.19.3
+imageio-ffmpeg==0.4.7
+importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1648562407465/work
+interactive-markers==1.12.0
+iopath==0.1.10
+ipython @ file:///tmp/build/80754af9/ipython_1643818144432/work
+jedi @ file:///tmp/build/80754af9/jedi_1644299024593/work
+joblib==1.1.0
+joint-state-publisher==1.15.1
+joint-state-publisher-gui==1.15.1
+kiwisolver @ file:///opt/conda/conda-bld/kiwisolver_1653292039266/work
+laser_geometry==1.6.7
+Markdown @ file:///tmp/build/80754af9/markdown_1614363832606/work
+matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1647441664166/work
+matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
+mavros==1.15.0
+message-filters==1.15.14
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-service==2.4.0
+multidict @ file:///opt/conda/conda-bld/multidict_1640703752579/work
+munkres==1.1.4
+numexpr @ file:///tmp/build/80754af9/numexpr_1640704205123/work
+numpy @ file:///opt/conda/conda-bld/numpy_and_numpy_base_1651563629415/work
+oauthlib==3.1.0
+olefile==0.46
+opencv-python==4.5.5.64
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.3.5
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.1.1
+portalocker==2.7.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.20.1
+psutil @ file:///tmp/build/80754af9/psutil_1612298016854/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+PyJWT==1.7.1
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+PySocks @ file:///tmp/build/80754af9/pysocks_1594394576006/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-qt-binding==0.4.4
+pytz==2021.3
+PyYAML==6.0
+qt-dotgraph==0.4.2
+qt-gui==0.4.2
+qt-gui-cpp==0.4.2
+qt-gui-py-common==0.4.2
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-oauthlib==1.3.0
+resource_retriever==1.12.7
+rosbag==1.15.14
+rosboost-cfg==1.15.8
+rosclean==1.15.8
+roscreate==1.15.8
+rosgraph==1.15.14
+roslaunch==1.15.14
+roslib==1.15.8
+roslint==0.12.0
+roslz4==1.15.14
+rosmake==1.15.8
+rosmaster==1.15.14
+rosmsg==1.15.14
+rosnode==1.15.14
+rosparam==1.15.14
+rospy==1.15.14
+rosservice==1.15.14
+rostest==1.15.14
+rostopic==1.15.14
+rosunit==1.15.8
+roswtf==1.15.14
+rqt-moveit==0.5.10
+rqt-reconfigure==0.5.5
+rqt-robot-dashboard==0.5.8
+rqt-robot-monitor==0.5.14
+rqt-rviz==0.7.0
+rqt_action==0.4.9
+rqt_bag==0.5.1
+rqt_bag_plugins==0.5.1
+rqt_console==0.4.11
+rqt_dep==0.4.12
+rqt_graph==0.4.14
+rqt_gui==0.5.3
+rqt_gui_py==0.5.3
+rqt_image_view==0.4.16
+rqt_launch==0.4.9
+rqt_logger_level==0.4.11
+rqt_msg==0.4.10
+rqt_nav_view==0.5.7
+rqt_plot==0.4.13
+rqt_pose_view==0.5.11
+rqt_publisher==0.4.10
+rqt_py_common==0.5.3
+rqt_py_console==0.4.10
+rqt_robot_steering==0.5.12
+rqt_runtime_monitor==0.5.9
+rqt_service_caller==0.4.10
+rqt_shell==0.4.11
+rqt_srv==0.4.9
+rqt_tf_tree==0.6.3
+rqt_top==0.4.10
+rqt_topic==0.4.13
+rqt_web==0.4.10
+rsa @ file:///tmp/build/80754af9/rsa_1614366226499/work
+rviz==1.14.14
+scikit-learn==1.0.2
+scipy @ file:///tmp/build/80754af9/scipy_1641536880743/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+sensor-msgs==1.13.1
+shutup==0.2.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sklearn==0.0
+smach==2.5.0
+smach-ros==2.5.0
+smclib==1.8.6
+tabulate==0.9.0
+tensorboard @ file:///tmp/build/80754af9/tensorboard_1633093581375/work/tensorboard-2.6.0-py3-none-any.whl
+tensorboard-data-server @ file:///tmp/build/80754af9/tensorboard-data-server_1633024562496/work/tensorboard_data_server-0.6.0-py3-none-manylinux2010_x86_64.whl
+tensorboard-plugin-wit==1.6.0
+termcolor==2.3.0
+tf==1.13.2
+tf-conversions==1.13.2
+tf2-geometry-msgs==0.7.6
+tf2-kdl==0.7.5
+tf2-py==0.7.5
+tf2-ros==0.7.5
+tf2-sensor-msgs==0.7.6
+thop==0.0.31.post2005241907
+threadpoolctl==3.1.0
+topic-tools==1.15.14
+torch==1.10.2
+torchaudio==0.10.2
+torchsummary==1.5.1
+torchvision==0.11.3
+tornado @ file:///tmp/build/80754af9/tornado_1606942283357/work
+tqdm @ file:///opt/conda/conda-bld/tqdm_1650891076910/work
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1650639997961/work
+vit-pytorch==0.35.8
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
+xacro==1.14.13
+yacs==0.1.8
+yarl @ file:///tmp/build/80754af9/yarl_1606939952652/work
+zipp @ file:///opt/conda/conda-bld/zipp_1652341764480/work
