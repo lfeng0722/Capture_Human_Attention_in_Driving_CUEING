@@ -16,11 +16,11 @@ Now, we can move to cleansing method
 ### Cleansing Method
 Input image cleansing:
 
-    fill the information in input_cleansing.py and run it
+    run Input_cleansing.sh
 
 Ground truth cleansing:
 
-    fill the information in gt_cleansing.py and run it
+    run gt_cleansing.sh
 
 
 ### Training and Testing

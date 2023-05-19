@@ -21,19 +21,45 @@ from data_reader import CUEING_reader
 from torchvision.utils import save_image
 from functions import bb_mapping
 
+parser = argparse.ArgumentParser(description='Cleansing')
+parser.add_argument('--imgdir', metavar='DIR', help='path to images folder')
+parser.add_argument('--gazemapsimg', metavar='DIR', help='path to gaze map images folder')
+parser.add_argument('--grid', default='', type=str, metavar='PATH', help='path to txt with grid entries for training images')
+parser.add_argument('--yolo5bb', metavar='DIR', help='path to folder of yolo5 bounding box txt files')
+parser.add_argument('--height', default=16, type=int, metavar='N',
+                    help='height of image')
+parser.add_argument('--width', default=16, type=int, metavar='N',
+                    help='width of image ')
 
-def mask_input(yolo5bb,loader,width, height, save_dir):
+parser.add_argument('--savedir', metavar='DIR', help='path to save cleansed image')
 
-    for i, (input, img_name) in enumerate(loader):
-        print(input.shape)
+
+
+def mask_input():
+
+    args = parser.parse_args()
+
+    dataset = CUEING_reader('mask', 'training', args.grid, args.imgdir, 0.1 ,args.gazemapsimg)
+
+
+
+    loader = torch.utils.data.DataLoader(
+        dataset,
+        batch_size=16, shuffle=True,
+        num_workers=2, pin_memory=True)
+
+    for i, (input, img_name) in enumerate(tqdm(loader)):
+        # print(input.shape)
         for j in range(len(img_name)):
             img_names = img_name[j]
             inputs = input[j]
 
-            filename = os.path.join(yolo5bb, img_names + ".txt")
+            filename = os.path.join(args.yolo5bb, img_names + ".txt")
+            print(filename)
             if os.path.exists(filename):
+                # print(11111)
 
-                mask_img = torch.zeros(3,660,1584)
+                mask_img = torch.zeros(3,args.height,args.width)
 
                 with open(filename) as f:
 
@@ -46,7 +72,7 @@ def mask_input(yolo5bb,loader,width, height, save_dir):
                         x_center = float(line[1])
                         y_center = float(line[2])
 
-                        x_min, x_max, y_min, y_max = bb_mapping(x_center, y_center, width, height,img_width = width, img_height = height)
+                        x_min, x_max, y_min, y_max = bb_mapping(x_center, y_center, width, height,img_width = args.width, img_height =args.height)
 
                         mask_img[:, y_min:y_max+1, x_min:x_max+1] = inputs[:, y_min:y_max+1, x_min:x_max+1]
 
@@ -54,40 +80,10 @@ def mask_input(yolo5bb,loader,width, height, save_dir):
 
 
 
-                    save_image(mask_img, save_dir + img_names + '.jpg')
+                    save_image(mask_img, args.savedir + img_names + '.jpg')
 
 
 
 if __name__ == "__main__":
 
-    subset = 'training'
-    task = 'mask'
-    grid = 'grids/grid1616/testing_dada_grid.txt'
-    #location of your grid.txt
-
-    gazemap = 'DADA/testing/gazemap_images'
-
-    #location of your gazemap
-
-    img = 'DADA/testing/camera_images'
-    #location of your original image
-
-    yolobb = f'yolo5_boundingboxes/testing_dada'
-    #location of your bounding box
-
-    width, height = 1584, 660
-    #the size of your original input
-
-    save_dir = ''
-    #location to save your cleansed input
-
-
-    dataset = CUEING_reader(task, subset, grid, img, 0.1 ,gazemap)
-
-
-
-    loader = torch.utils.data.DataLoader(
-        dataset,
-        batch_size=16, shuffle=True,
-        num_workers=2, pin_memory=True)
-    mask_input(yolobb,loader,width, height, save_dir)
+    mask_input()

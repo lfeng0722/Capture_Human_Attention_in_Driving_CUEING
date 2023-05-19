@@ -21,7 +21,7 @@ from functions import *
 
 
 
-parser = argparse.ArgumentParser(description='Feature Training and Test')
+parser = argparse.ArgumentParser(description='Training and Test')
 
 parser.add_argument('--epochs', default=50, type=int, metavar='N',
                     help='number of total epochs to run')

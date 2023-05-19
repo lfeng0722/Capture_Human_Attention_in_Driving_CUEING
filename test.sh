@@ -2,10 +2,10 @@ python main.py \
        --b 128 \
        --gridheight 16 \
        --gridwidth 16 \
-       --testgrid '/media/linfeng/HDD1/DATASET/CUEING-D/testing/grid.txt' \
-       --testgazemaps '/media/linfeng/HDD1/DATASET/CUEING-D/testing/gazemap_images' \
-       --testdir '/media/linfeng/HDD1/DATASET/CUEING-D/testing/camera_images' \
-       --yolo5bbtest '/media/linfeng/HDD1/DATASET/CUEING-D/testing/bbox' \
+       --testgrid '/media/user/HDD1/DATASET/CUEING-D/testing/grid.txt' \
+       --testgazemaps '/media/user/HDD1/DATASET/CUEING-D/testing/gazemap_images' \
+       --testdir '/media/user/HDD1/DATASET/CUEING-D/testing/camera_images' \
+       --yolo5bbtest '/media/user/HDD1/DATASET/CUEING-D/testing/bbox' \
        --weight 'weight/BDD-A'\
        --gpu 0 \
        --visualizations \
